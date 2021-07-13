@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<title>Sanap - Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="shortcut icon" href="../css/logo2.ico">
+	
+</head>
+
+<body span style="background-color: rgb(196, 181, 196)"></span>
+
+	<div>
+	
+		<a href="index.html"><img span style="height: 25px" src="../css/logo2.png" alt="logo"></a></span>
+	
+	</div>
+	
+	<div id="porzadek">
+	
+		<div id="glowny">
+			
+			<form class="form" action="db.php" method="post">
+			
+				<div class="label"><h1>Log in</h1></div><br /><br />
+				<div class="label">Username:</div><br />
+				<input type="text" class="dane" name="login" id="login"><br /><br />
+				<div class="label">Password:</div><br />
+				<input type="password" class="dane" name="password" id="password"><br /><br /><br />
+				<button class="przyciskl" type="submit" onClick="weryfikuj()">Log in</button><br />
+				<div id="wynik"></div>
+				
+				<script async src="../js/password.js"></script>
+	
+				
+			</form>
+			
+			<a class="zlogowanie" href="@">Have you forgot your username?</a> | <a class="zlogowanie" href="@">Have you forgot your password?</a><br />
+			<br /><br />
+			<span style="text-align: center; color: black">OR</span><br />
+			<br /><br />
+			<input class="przyciskd" type="button" value="Create new account" onClick="location.href='creating.html';"/>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
